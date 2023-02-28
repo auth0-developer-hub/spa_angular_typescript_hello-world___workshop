@@ -1,6 +1,6 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { HomeComponent } from "./features/home/home.component";
+import {NgModule} from "@angular/core";
+import {RouterModule, Routes} from "@angular/router";
+import {HomeComponent} from "./features/home/home.component";
 
 const routes: Routes = [
   {
@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: "protected",
     loadComponent: () => import("./features/protected/protected.component")
+  },
+  {
+    path: "callback",
+    loadComponent: () => import("./features/callback/callback.component")
   },
   {
     path: "**",
