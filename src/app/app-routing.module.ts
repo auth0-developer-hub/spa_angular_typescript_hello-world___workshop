@@ -28,6 +28,10 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
+    path: "callback",
+    loadComponent: () => import("./features/callback/callback.component")
+  },
+  {
     path: "**",
     loadComponent: () => import("./features/not-found/not-found.component")
   }
